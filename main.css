@@ -1,0 +1,290 @@
+:root {
+  --wenge: #6a5651ff;
+  --dun: #cebcafff;
+  --timberwolf: #ded5cbff;
+  --beaver: #c3937dff;
+  --silver: #b5ada8ff;
+  --platinum: #e6e3e1ff;
+  --davys-gray-dark: #494547ff;
+  --cinereous: #8e786fff;
+  --rose-taupe: #816459ff;
+  --davys-gray: #49454799;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-transform: capitalize;
+  background-color: var(--beaver);
+  /* filter: brightness(90%); */
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(imgs/pexels-tirachard-kumtanom-733856.jpg);
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(70%);
+}
+
+nav {
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99999;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  margin-right: 10px;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav p {
+  font-family: "Tangerine", cursive;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: white;
+}
+.first {
+  padding: 10px;
+  display: grid;
+  height: 90vh;
+  grid-template-rows: 80% 20%;
+}
+.first .text {
+  height: 100%;
+}
+.first h1 {
+  font-weight: bolder;
+  font-size: 58px;
+  margin-top: 20%;
+  font-family: "Tangerine", cursive;
+  color: white;
+  text-align: center;
+}
+.cards-holder {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid white;
+}
+.cards {
+  display: flex;
+  color: white;
+}
+.cards i {
+  font-size: 34px;
+  margin-right: 20px;
+  color: white;
+}
+.cards p:first-child {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.cards p:last-child {
+  font-size: 12px;
+}
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  height: 90vh;
+}
+.second .text {
+  padding: 5%;
+  width: 75%;
+}
+.second .text h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 58px;
+  font-weight: bolder;
+  color: white;
+  margin-bottom: 10px;
+}
+.second .text h1 span {
+  color: white;
+}
+.second .text p {
+  color: var(--davys-gray-dark);
+  font-size: 1.1rem;
+  line-height: 2;
+  font-style: italic;
+}
+.second .image {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background-image: url(imgs/JKP03077_1080x1919_via_10015_io.png);
+  width: 35%;
+  height: inherit;
+  background-size: cover;
+}
+.third {
+  padding: 10px 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.third h1 {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Tangerine", cursive;
+  color: white;
+  font-size: 3rem;
+}
+
+.lessons-holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.lesson {
+  padding: 20px 10px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border: 3px solid white;
+
+  border-radius: 8px;
+}
+.lesson i {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--davys-gray);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.lesson h3 {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  margin-bottom: 15px;
+}
+.lesson p {
+  color: white;
+  line-height: 1.8;
+}
+.fourth {
+  margin-top: 30px;
+}
+.fourth h1 {
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Tangerine", cursive;
+  color: white;
+  font-size: 3rem;
+}
+.testmonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.testmonial {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 20px;
+  align-items: center;
+  width: 35%;
+  min-height: 25vh;
+  background-color: #49454730;
+  color: white;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+.testmonial h5 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: end;
+  font-family: "Tangerine", cursive;
+  position: relative;
+  font-style: italic;
+  color: var(--davys-gray-dark);
+}
+footer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 50px;
+  min-height: 25vh;
+  background-color: #49454730;
+}
+footer div {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer i {
+  color: white;
+  font-size: 2rem;
+}
+footer h1 {
+  font-family: "Tangerine", cursive;
+  color: white;
+}
+footer p {
+  color: white;
+}
+
+.animation {
+  animation: myAnim 2s ease 0s 1 normal both;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
